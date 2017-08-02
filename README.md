@@ -1,24 +1,23 @@
 # News Classifier using KNN and Naive Baye's Classifier
 
-This is a set of simple machine learning algorithm which scrapes news websites and classifies them. Algorithms used are:
+This is a set of simple machine learning algorithms which does sentiment analysis on tweets relating to tech companies. Algorithms used are:
 
-1. KNN
-2. Naive Baye's 
-3. K-Means
+1. Naive Baye's 
+2. SVM
 
-#### Brief Descriptions of the algorithms
+#### Brief Descriptions of the proceedure
 
-* **KNN / Naive Baye's:** For this, first we train the algorithm with a predefined set of tech articles and non-tech articles from the New York Times, and the Washington Post
-by scraping their respective websites. After that, we can provide a test article from another blog (Doxy Donkey), and the algorithm will label it as either 'tech' or 'non-tech'.
-
-* **K-Means:** This is a clustering algorithm that is unsupervised. First, we scrape all the articles from DoxyDonkey. Then, we vectorize it using TF-IDF, and then we apply 
-the K-Means algorithm to it, to form 5 clusters.
+* Downloaded the [Niek Sanders Tweet Sentiment Corpus](http://www.sananalytics.com/lab/twitter-sentiment/) which has over 5000 labelled tweets related to the tech industry.
+* Take a search term from the user, and use twitter api to download 100 tweets related to it.
+* Use Naive Baye's and SVM classifier to separately train the algorithm using the downloaded corpus.
+* Use the trained classifier to classify the set of 100 downloaded tweets.
+* Take a majority vote on the classified tweets
 
 ## Special Packages used
 
 Scikit Learn  
 NLTK  
-BeautifulSoup
+twitter
 
 ## License
 
