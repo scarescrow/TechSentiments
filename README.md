@@ -1,4 +1,4 @@
-# News Classifier using KNN and Naive Baye's Classifier
+# Sentiment Analysis of Tech Tweets
 
 This is a set of simple machine learning algorithms which does sentiment analysis on tweets relating to tech companies. Algorithms used are:
 
@@ -17,7 +17,7 @@ This is a set of simple machine learning algorithms which does sentiment analysi
 
 Scikit Learn  
 NLTK  
-twitter
+Twitter
 
 ## License
 
